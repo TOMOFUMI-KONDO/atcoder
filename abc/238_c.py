@@ -1,7 +1,4 @@
-import math
-
 mod = 998244353
-inverse = math.ceil(mod / 2)
 
 
 def main():
@@ -14,8 +11,8 @@ def main():
             k = 9 * 10 ** (i - 1)
         else:
             k = N - 10 ** (i - 1) + 1
-        ans = (ans + ((((k % mod) * ((k + 1) % mod)) * inverse) % mod)) % mod
-    print(ans)
+        ans = ans + (k * (k + 1)) // 2
+    print(ans % mod)
 
 
 if __name__ == "__main__":
