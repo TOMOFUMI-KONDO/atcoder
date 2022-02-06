@@ -2,12 +2,16 @@ all: main.py
 
 define TEMPLATE
 def main():
-	pass
+    N = int(input())
+
 
 if __name__ == "__main__":
-	main()
+    main()
 endef
 export TEMPLATE
 
 main.py:
 	echo "$$TEMPLATE" > main.py
+
+clean:
+	rm -f main.py
