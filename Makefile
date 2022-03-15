@@ -3,6 +3,7 @@ all: main.py
 define TEMPLATE
 import sys
 
+INF = 10**18
 
 def judge(cond, yes='Yes', no='No'):
     print(yes if cond else no)
