@@ -10,6 +10,15 @@ def judge(cond, yes='Yes', no='No'):
     print(yes if cond else no)
 
 
+def print_list(l, sep=""):
+    print(sep.join(l))
+
+
+def print_2d_list(l):
+    for i in range(len(l)):
+        print_list(l[i])
+
+
 def main():
     N = int(input())
     # N, M = map(int, input().split())
