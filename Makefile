@@ -18,7 +18,7 @@ def judge(cond, yes='Yes', no='No'):
 
 
 def print_list(l, sep=""):
-    print(sep.join(l))
+    print(sep.join(map(str, l)))
 
 
 def print_2d_list(l):
