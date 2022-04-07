@@ -17,7 +17,7 @@ def judge(cond, yes='Yes', no='No'):
     print(yes if cond else no)
 
 
-def print_list(l, sep=""):
+def print_list(l, sep=" "):
     print(sep.join(map(str, l)))
 
 
