@@ -2,7 +2,6 @@ all: main.py
 
 define TEMPLATE
 import sys
-from collections import defaultdict
 
 INF = 10**18
 
