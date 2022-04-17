@@ -1,7 +1,7 @@
 all: main.py
 
 define TEMPLATE
-import sys
+# import sys
 
 INF = 10**18
 
@@ -26,7 +26,7 @@ def print_2d_list(l):
 
 
 if __name__ == "__main__":
-    sys.setrecursionlimit(10**6)
+    # sys.setrecursionlimit(10**6)
     main()
 endef
 export TEMPLATE
