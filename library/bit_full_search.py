@@ -17,5 +17,15 @@ def bit_full_search(n):
     return subsets
 
 
+def bit_count(b):
+    ret = 0
+
+    while b > 0:
+        ret += 1 if b & 1 == 1 else 0
+        b >>= 1
+
+    return ret
+
+
 if __name__ == "__main__":
     print(bit_full_search(3))
