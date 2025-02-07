@@ -8,8 +8,8 @@ INF = 10**18
 
 
 def main():
-    N = int(input())
-    # N, M = map(int, input().split())
+    # n = int(input())
+    # n, m = map(int, input().split())
     # A = list(map(int, input().split()))
 
 
@@ -44,12 +44,12 @@ using namespace std;
 #define rep2(i, s, n) for (int i = (s); i < (int)(n); i++)
 
 int main() {
-  int N;
-  cin >> N;
-  /* int N, M; */
-  /* cin >> N >> M; */
-  /* vector<int> A(N); */
-  /* rep(i, N) cin >> A[i]; */
+  /* int n; */
+  /* cin >> n; */
+  /* int n, m; */
+  /* cin >> n >> m; */
+  /* vector<int> A(n); */
+  /* rep(i, n) cin >> A[i]; */
 }
 endef
 export TEMPLATE_CPP
