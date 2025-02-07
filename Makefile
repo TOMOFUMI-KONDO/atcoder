@@ -1,6 +1,7 @@
-all: main.py
+.PHOYNY: all
+all: main.py main.cpp
 
-define TEMPLATE
+define TEMPLATE_PYTHON
 # import sys
 
 INF = 10**18
@@ -29,10 +30,38 @@ if __name__ == "__main__":
     # sys.setrecursionlimit(10**6)
     main()
 endef
-export TEMPLATE
+export TEMPLATE_PYTHON
 
 main.py:
-	echo "$$TEMPLATE" > main.py
+	echo "$$TEMPLATE_PYTHON" > main.py
 
+define TEMPLATE_CPP
+#include <bits/stdc++.h>
+using namespace std;
+
+#define INF 1e18
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define rep2(i, s, n) for (int i = (s); i < (int)(n); i++)
+
+int main() {
+  int N;
+  cin >> N;
+  /* int N, M; */
+  /* cin >> N >> M; */
+  /* vector<int> A(N); */
+  /* rep(i, N) cin >> A[i]; */
+}
+endef
+export TEMPLATE_CPP
+
+main.cpp:
+	echo "$$TEMPLATE_CPP" > main.cpp
+
+.PHONY: runcpp
+runcpp:
+	clang++ main.cpp && ./a.out
+	rm -f a.out
+
+.PHONY: clean
 clean:
-	rm -f main.py
+	rm -f main.{py,cpp}
