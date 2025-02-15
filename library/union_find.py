@@ -49,4 +49,4 @@ class UnionFind:
         return group_members
 
     def __str__(self):
-        return '\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())
+        return "\n".join(f"{r}: {m}" for r, m in self.all_group_members().items())
