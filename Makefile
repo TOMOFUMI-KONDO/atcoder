@@ -3,8 +3,9 @@ all: main.py main.cpp
 
 define TEMPLATE_PYTHON
 # import sys
+import math
 
-INF = 10**18
+INF = math.inf
 
 
 def main():
