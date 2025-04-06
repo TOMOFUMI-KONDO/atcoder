@@ -26,6 +26,9 @@ def print_2d_list(l):
     for i in range(len(l)):
         print_list(l[i])
 
+def print_dict(d: dict):
+    for k, v in d.items():
+        print(f"{k} {v}")
 
 if __name__ == "__main__":
     # sys.setrecursionlimit(10**6)
