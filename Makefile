@@ -50,8 +50,10 @@ using namespace std;
 int main() {
   /* int n; */
   /* cin >> n; */
+
   /* int n, m; */
   /* cin >> n >> m; */
+
   /* vector<int> A(n); */
   /* rep(i, n) cin >> A[i]; */
 }
